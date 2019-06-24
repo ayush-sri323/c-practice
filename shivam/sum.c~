@@ -1,0 +1,19 @@
+#include <stdio.h>
+
+int main(){
+
+  int f, l, sum=0, t;
+    printf("enter the first number\n");
+    scanf("%d",&f);
+    t=f;
+    pritnf("\nenter the last  number");
+    scanf("%d",&l);
+    while(f<=l){
+      sum+=f;
+      f++;
+
+    }
+    printf("sum of the range from %d to %d =%d",t,l,sum);
+    return 0;
+} 
+      

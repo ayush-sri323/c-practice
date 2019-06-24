@@ -1,0 +1,18 @@
+#include <stdio.h>
+void hcf(int ,int);
+int main(){int a,b;
+
+  printf("enter the number a and b");
+  scanf("%d%d",&a,&b);
+   hcf(a,b);
+  return 0 ;
+}
+
+void hcf(int a,int b)
+{
+  if(b==0)
+    return ;
+  hcf(b,a%b);
+  printf("hcf=%d",a);
+
+}

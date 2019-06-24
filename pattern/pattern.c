@@ -1,0 +1,56 @@
+#include <stdio.h>
+int main(){
+
+  int i,j,k;
+  for(i= 1 ; i< 5 ; i++)
+    {
+      for(j=5 ; j>i ; j--)
+
+	{ printf(" ");
+	}
+      if(i==3)
+	j=4;
+      if(i==4)
+	j=6;
+
+      for(k=0 ; k<= j ; k++)
+	     
+
+	      {
+		if(i==4)
+		  {if(k==0||k==6)
+		      printf("*");
+		    else
+		      printf(" ");
+		  }
+		else
+		  {  
+		    if(i==3)
+		      { if(k==1||k==3||k==4||k==0)
+			  printf("*");
+			else
+			  printf(" ");
+		      }
+		    
+		     
+		    else
+		      {      
+		if(k%2==0)
+		  {	printf("*");
+		  }
+		else
+		  printf(" ");
+		      }
+
+		  }
+		  }
+	  
+
+      printf("\n");
+
+    }
+
+}
+
+    
+    
